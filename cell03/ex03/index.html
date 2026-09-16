@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <input type="text" id="left">
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="text" id="right">
+    <input type="button" value="Try me!" onclick="calc()">
+
+    <script>
+        function calc() {
+
+            const lStr = document.getElementById('left').value;
+            const rStr = document.getElementById('right').value;
+            const op = document.getElementById('op').value;
+            if (lStr === '' || rStr === '' || isNaN(lStr) || isNaN(rStr) || Number(lStr) < 0 || Number(rStr) < 0) {
+                alert('Error :(');
+                return;
+            }
+
+            const l = Number(lStr);
+            const r = Number(rStr);
+            let res;
+            if ((op === '/' || op === '%') && r === 0) {
+                alert("It’s over 9000!");
+                console.log("It’s over 9000!");
+                return;
+            }
+            if (op === '+') res = l + r;
+            if (op === '-') res = l - r;
+            if (op === '*') res = l * r;
+            if (op === '/') res = l / r;
+            if (op === '%') res = l % r;
+
+            alert(res);
+            console.log(res);
+        }
+
+        setInterval(function() {
+            alert('Please, use me...');
+        }, 30000);
+    </script>
+
+</body>
+</html>

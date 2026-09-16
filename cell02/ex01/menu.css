@@ -1,0 +1,24 @@
+        body {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        details {
+            width: 300px;
+            background: #ffffff;
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+        }
+
+        summary {
+            padding: 15px;
+            font-weight: bold;
+            background-color: #ffcc00;
+            color: #333;
+        }
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }

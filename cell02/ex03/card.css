@@ -1,5 +1,17 @@
-.card{
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.card {
     text-align: center;
-     border: 1px solid #ccc;
-      width: 250px; padding: 20px; 
-      border-radius: 10px;}
+    border: 1px solid #ccc;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}

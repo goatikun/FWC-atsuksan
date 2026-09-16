@@ -1,32 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
     <link rel="stylesheet" href="balloon.css">
 </head>
 <body>
-<div id="balloon"></div>
+    <div id="balloon"></div>
 
-<script>
-    const b = document.getElementById('balloon');
-    let s = 200, i = 0, colors = ['red', 'green', 'blue'];
-
-    function update() {
-        b.style.width = b.style.height = s + 'px';
-        b.style.backgroundColor = colors[i];
-    }
-
-    b.onclick = () => {
-        s += 10;
-        i = (i + 1) % 3;
-        if (s > 420) { s = 200; i = 0; }
-        update();
-    };
-    b.onmouseleave = () => {
-        if (s > 200) s -= 5;
-        i = (i - 1 + 3) % 3;
-        update();
-    };
-</script>
-
+    <script src="balloon.js"></script>
 </body>
 </html>

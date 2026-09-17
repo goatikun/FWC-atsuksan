@@ -1,0 +1,16 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+}
+
+#balloon {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+}

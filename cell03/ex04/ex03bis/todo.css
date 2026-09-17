@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+.todo-app {
+    width: 400px;
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#ft_list {
+    margin-top: 20px;
+}
+
+#ft_list div {
+    padding: 12px;
+    margin-top: 8px;
+    text-align: left;
+    background-color: #dceeff;
+    border-radius: 5px;
+    cursor: pointer;
+}

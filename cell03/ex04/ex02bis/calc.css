@@ -1,0 +1,22 @@
+body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+input,
+select {
+    padding: 10px;
+    margin: 5px;
+}
+
+#try-me {
+    cursor: pointer;
+}
